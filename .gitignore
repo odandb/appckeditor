@@ -1,0 +1,11 @@
+### APP ###
+.idea
+.vscode
+.DS_Store
+
+###> webpack ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< webpack ###
