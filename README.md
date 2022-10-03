@@ -1,5 +1,5 @@
 # AppCKEditor
-===================================
+
 [![npm version](https://badge.fury.io/js/@odandb%2Fappckeditor.svg)](https://www.npmjs.com/package/@odandb/appckeditor)
 AppCKEditor is a custom build of CKEditor5.
 
@@ -31,7 +31,7 @@ This build includes the following plugins :
 
 ## Installation
 
-`yarn add @alkadrim/appckeditor`
+`yarn add @odandb/appckeditor`
 
 ## Sources
 
