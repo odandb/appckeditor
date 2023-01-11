@@ -2,6 +2,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor.
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
+import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Font from '@ckeditor/ckeditor5-font/src/font.js';
@@ -31,6 +32,7 @@ export default class Editor extends ClassicEditor {}
 Editor.builtinPlugins = [
     Essentials,
     Alignment,
+    Autoformat,
     Bold,
     BlockQuote,
     Font,
