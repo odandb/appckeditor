@@ -1,8 +1,11 @@
 import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor.js';
-import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
-import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
-import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
+
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
+import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
+import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
+import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
+import Font from '@ckeditor/ckeditor5-font/src/font.js';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline.js';
 import Image from '@ckeditor/ckeditor5-image/src/image.js';
@@ -21,36 +24,36 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
-import Font from '@ckeditor/ckeditor5-font/src/font.js';
 
 // Extends the base Editor Class
-class Editor extends ClassicEditor {}
+export default class Editor extends ClassicEditor {}
 
 // Main editor plugins
 Editor.builtinPlugins = [
     Essentials,
-    Table,
-    TableToolbar,
-    Link,
-    Paragraph,
     Alignment,
-    Heading,
-    Image,
+    Autoformat,
     Bold,
-    ImageResize,
+    BlockQuote,
+    Font,
+    Heading,
+    HorizontalLine,
     Italic,
+    Image,
+    ImageCaption,
+    ImageResize,
     ImageUpload,
     ImageToolbar,
     ImageStyle,
-    ImageCaption,
-    BlockQuote,
+    Link,
     List,
-    Strikethrough,
-    Underline,
+    MediaEmbed,
     PageBreak,
-    HorizontalLine,
-    Font,
-    MediaEmbed
+    Paragraph,
+    Strikethrough,
+    Table,
+    TableToolbar,
+    Underline
 ];
 
 // Base editor configuration
@@ -115,4 +118,3 @@ Editor.defaultConfig = {
     }
 };
 
-export default Editor;

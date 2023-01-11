@@ -48,7 +48,9 @@ module.exports = {
                 'it',
                 'nl',
                 'pl',
-                'pt'
+                'pt',
+                'cs',
+                'ja'
             ]
         } ),
         new webpack.BannerPlugin( {
