@@ -126,6 +126,10 @@ Editor.defaultConfig = {
             'tableRow',
             'mergeTableCells'
         ]
+    },
+    uploadBridge: {
+        base64upload: false,
+        axiosupload: false
     }
 };
 

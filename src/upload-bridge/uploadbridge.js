@@ -1,35 +1,28 @@
-import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import FileRepository from '@ckeditor/ckeditor5-upload/src/filerepository';
-import {logError} from '@ckeditor/ckeditor5-utils';
 import Base64UploadAdapter from './adapter/base64uploadadapter';
 
-export default class UploadBridge extends Plugin {
+export default class UploadBridge {
+    constructor (editor) {
+        this.editor = editor
+    }
+
     static get requires() {
         return [];
     }
 
-    /**
-     * @inheritDoc
-     */
-    static get pluginName() {
-        return 'UploadBridge';
-    }
-
     init() {
-        if (!this.editor.plugins.has(FileRepository)) {
+        if (!this.editor.plugins.has('FileRepository')) {
             /**
              * The plugin require on the `FileRepository` plugin.
              *
              * @error upload-bridge-missing-modules-file-repository
              */
-            logError('upload-bridge-missing-modules-file-repository');
+            console.error('upload-bridge-missing-modules-file-repository');
 
             return;
         }
 
         const options = this.editor.config.get('uploadBridge');
-
-        if ( !options ) {
+        if (!options) {
             return;
         }
 
@@ -40,13 +33,13 @@ export default class UploadBridge extends Plugin {
              *
              * @error upload-bridge-to-many-adapter
              */
-            logError( 'upload-bridge-to-many-adapter' );
+            console.error( 'upload-bridge-to-many-adapter' );
 
             return;
         }
 
         if (options.base64upload) {
-            this.editor.plugins.get( FileRepository ).createUploadAdapter = loader => new Base64UploadAdapter( loader );
+            this.editor.plugins.get('FileRepository').createUploadAdapter = loader => new Base64UploadAdapter( loader );
         }
 
         if (options.axiosupload) {
