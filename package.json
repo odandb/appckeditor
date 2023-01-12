@@ -25,6 +25,7 @@
     "@ckeditor/ckeditor5-media-embed": "^35.4.0",
     "@ckeditor/ckeditor5-page-break": "^35.4.0",
     "@ckeditor/ckeditor5-paragraph": "^35.4.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^35.4.0",
     "@ckeditor/ckeditor5-remove-format": "^35.4.0",
     "@ckeditor/ckeditor5-table": "^35.4.0",
     "@ckeditor/ckeditor5-theme-lark": "^35.4.0",
