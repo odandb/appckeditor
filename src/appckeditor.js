@@ -14,12 +14,15 @@ import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize.js';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle.js';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar.js';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload.js';
+import Indent from '@ckeditor/ckeditor5-indent/src/indent';
+import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
-import List from '@ckeditor/ckeditor5-list/src/list.js';
+import ListProperties from '@ckeditor/ckeditor5-list/src/listproperties';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed.js';
 import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
+import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
@@ -42,18 +45,21 @@ Editor.builtinPlugins = [
     Font,
     Heading,
     HorizontalLine,
-    Italic,
     Image,
     ImageCaption,
     ImageResize,
     ImageUpload,
     ImageToolbar,
     ImageStyle,
+    Indent,
+    IndentBlock,
+    Italic,
     Link,
-    List,
+    ListProperties,
     MediaEmbed,
     PageBreak,
     Paragraph,
+    PasteFromOffice,
     RemoveFormat,
     Strikethrough,
     Table,
@@ -83,6 +89,8 @@ Editor.defaultConfig = {
             '|',
             'bulletedList',
             'numberedList',
+            'outdent',
+            'indent',
             'blockQuote',
             '|',
             'link',
