@@ -2,7 +2,7 @@
   "name": "@odandb/appckeditor",
   "author": "odandb",
   "description": "A custom CKEditor5 for ODandB apps",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "GPL-2.0-or-later",
   "main": "./build/appckeditor.js",
   "devDependencies": {
@@ -29,6 +29,7 @@
     "@ckeditor/ckeditor5-table": "^35.1.0",
     "@ckeditor/ckeditor5-theme-lark": "^35.1.0",
     "@ckeditor/ckeditor5-upload": "^33.0.0",
+    "@ckeditor/ckeditor5-utils": "^35.4.0",
     "axios": "^0.26.1",
     "css-loader": "^5.2.7",
     "postcss": "^8.4.16",
