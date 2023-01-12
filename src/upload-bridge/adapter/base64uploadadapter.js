@@ -1,4 +1,3 @@
-
 export default class Base64UploadAdapter {
 	/**
 	 * Creates a new adapter instance.
