@@ -6,28 +6,30 @@ AppCKEditor is a custom build of CKEditor5.
 ## Plugins
 This build includes the following plugins :
 - Essentials
-- Table
-- TableToolbar
-- Link
-- Paragraph
 - Alignment
-- Heading
-- Image
+- Autoformat
 - Bold
-- ImageResize
+- BlockQuote
+- Font
+- Heading
+- HorizontalLine
 - Italic
+- Image
+- ImageCaption
+- ImageResize
 - ImageUpload
 - ImageToolbar
 - ImageStyle
-- ImageCaption
-- BlockQuote
+- Link
 - List
-- Strikethrough
-- Underline
-- PageBreak
-- HorizontalLine
-- Font
 - MediaEmbed
+- PageBreak
+- Paragraph
+- RemoveFormat
+- Strikethrough
+- Table
+- TableToolbar
+- Underline
 
 ## Installation
 

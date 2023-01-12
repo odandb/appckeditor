@@ -20,6 +20,7 @@ import List from '@ckeditor/ckeditor5-list/src/list.js';
 import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed.js';
 import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js';
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
@@ -50,6 +51,7 @@ Editor.builtinPlugins = [
     MediaEmbed,
     PageBreak,
     Paragraph,
+    RemoveFormat,
     Strikethrough,
     Table,
     TableToolbar,
@@ -66,15 +68,6 @@ Editor.defaultConfig = {
             'italic',
             'strikethrough',
             'underline',
-            'bulletedList',
-            'numberedList',
-            '|',
-            'horizontalLine',
-            'pageBreak',
-            '|',
-            'imageUpload',
-            'mediaEmbed',
-            'insertTable',
             '|',
             'fontSize',
             'fontFamily',
@@ -83,16 +76,29 @@ Editor.defaultConfig = {
             '|',
             'alignment',
             '|',
-            'link',
+            'bulletedList',
+            'numberedList',
             'blockQuote',
             '|',
+            'link',
+            'imageUpload',
+            'mediaEmbed',
+            'insertTable',
+            '|',
+            'horizontalLine',
+            'pageBreak',
+            '|',
             'undo',
-            'redo'
+            'redo',
+            'removeFormat',
         ]
     },
     language: 'fr',
     image: {
-        toolbar: [ 'imageTextAlternative', '|', 'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight' ],
+        toolbar: [
+            'toggleImageCaption', 'imageTextAlternative', '|',
+            'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight'
+        ],
         resizeUnit: '%',
         styles: [
             'full',
