@@ -2,7 +2,7 @@
   "name": "@odandb/appckeditor",
   "author": "odandb",
   "description": "A custom CKEditor5 for ODandB apps",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "GPL-2.0-or-later",
   "main": "./build/appckeditor.js",
   "devDependencies": {
@@ -25,6 +25,7 @@
     "@ckeditor/ckeditor5-media-embed": "^35.4.0",
     "@ckeditor/ckeditor5-page-break": "^35.4.0",
     "@ckeditor/ckeditor5-paragraph": "^35.4.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^35.4.0",
     "@ckeditor/ckeditor5-remove-format": "^35.4.0",
     "@ckeditor/ckeditor5-table": "^35.4.0",
     "@ckeditor/ckeditor5-theme-lark": "^35.4.0",
