@@ -2,7 +2,7 @@
   "name": "@odandb/appckeditor",
   "author": "odandb",
   "description": "A custom CKEditor5 for ODandB apps",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "license": "GPL-2.0-or-later",
   "main": "./build/appckeditor.js",
   "devDependencies": {
