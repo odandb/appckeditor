@@ -107,6 +107,9 @@ Editor.defaultConfig = {
         ]
     },
     language: 'fr',
+    link: {
+        addTargetToExternalLinks: true,
+    },
     image: {
         toolbar: [
             'toggleImageCaption', 'imageTextAlternative', '|',
