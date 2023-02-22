@@ -28,6 +28,7 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough.js
 import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting.js";
 
 // Custom Plugins
 import UploadBridge from './upload-bridge/uploadbridge';
@@ -61,6 +62,7 @@ Editor.builtinPlugins = [
     Paragraph,
     PasteFromOffice,
     RemoveFormat,
+    SourceEditing,
     Strikethrough,
     Table,
     TableToolbar,
@@ -103,7 +105,7 @@ Editor.defaultConfig = {
             '|',
             'undo',
             'redo',
-            'removeFormat',
+            'removeFormat'
         ]
     },
     language: 'fr',
